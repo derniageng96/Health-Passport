@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-grid>
+  <center>
+    <h1 class = "title">Who are You?</h1>   
+</center>
+
+    <ion-row>
+  <!-- <ion-col>
+      <ion-button fill="solid" size="large" class="sqare_button" (click)="drinkwater()" >
+          <div class="vertical">
+          <ion-icon slot="start" name="water-outline"></ion-icon>
+          <span class="">Drink Water</span>
+          </div>
+      </ion-button>
+  </ion-col>
+  <ion-col>
+      <ion-button fill="solid" size="large" class="sqare_button"(click)="studentneeds()">
+          <div class="vertical">
+            <ion-icon slot="start"name="search-outline"></ion-icon>
+            <span class="">Find Suitable Dispenser</span>
+          </div>
+      </ion-button>
+  </ion-col> -->
+  <ion-col>
+    <ion-button fill="solid" size="large" class="sqare_button"(click)="drinkwater()">
+        <div class="vertical">
+          <ion-icon slot="start"name="person-sharp"></ion-icon>
+          <span class="">Student</span>
+        </div>
+    </ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-button fill="solid" size="large" class="sqare_button"(click)="teacherpage()">
+        <div class="vertical">
+          <ion-icon slot="start"name="person-sharp"></ion-icon>
+          <span class="">Teacher</span>
+        </div>
+    </ion-button>
+  </ion-col>
+</ion-row>
+  </ion-grid>
+  <ion-button color="light" item-end (click)="settingMenu()">
+    <ion-icon slot="start" name="settings-outline"></ion-icon>Setting-Menu
+</ion-button> 	  
