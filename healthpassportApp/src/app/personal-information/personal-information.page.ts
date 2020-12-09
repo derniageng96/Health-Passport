@@ -132,12 +132,12 @@ export class PersonalInformationPage implements OnInit {
                 if(this.deviceid)
                 {
                   noCardId.present();
-                  this.navCtrl.navigateRoot('/login', navigationExtras);
+                  this.navCtrl.navigateRoot('/home', navigationExtras);
                   
                 }
                 else{
                   noCardId.present();
-                  this.navCtrl.navigateRoot('/login');
+                  this.navCtrl.navigateRoot('/home');
                 }
               }
               if(this.booleanData == true)
@@ -165,7 +165,7 @@ export class PersonalInformationPage implements OnInit {
         if(respon.Data == undefined){
           this.loadingCtrl.dismiss();
           errorConnection.present();
-          this.navCtrl.navigateRoot('/login');
+          this.navCtrl.navigateRoot('/home');
         }
         else
         {

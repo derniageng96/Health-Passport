@@ -20,4 +20,8 @@ export class TeacherPagePage implements OnInit {
   ngOnInit() {
   }
 
+  async studentneeds()
+  {
+    this.navCtrl.navigateRoot('/student-needs');
+  }
 }

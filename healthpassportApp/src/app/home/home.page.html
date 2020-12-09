@@ -11,7 +11,7 @@
 
 <ion-grid>
   <center>
-    <h1 class = "title">Who are You?</h1>   
+    <h1 class = "title">Main menu</h1>   
 </center>
 
     <ion-row>
@@ -32,18 +32,26 @@
       </ion-button>
   </ion-col> -->
   <ion-col>
-    <ion-button fill="solid" size="large" class="sqare_button"(click)="drinkwater()">
+    <ion-button fill="solid" size="large" class="sqare_button"(click)="loginWithCard()">
         <div class="vertical">
-          <ion-icon slot="start"name="person-sharp"></ion-icon>
-          <span class="">Student</span>
+          <ion-icon slot="start"name="card"></ion-icon>
+          <span class="">Use Dispenser with Card</span>
         </div>
     </ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="solid" size="large" class="sqare_button"(click)="teacherpage()">
+    <ion-button fill="solid" size="large" class="sqare_button"(click)="studentneeds()">
         <div class="vertical">
-          <ion-icon slot="start"name="person-sharp"></ion-icon>
-          <span class="">Teacher</span>
+          <ion-icon slot="start"name="search-outline"></ion-icon>
+          <span class="">Search Dispenser</span>
+        </div>
+    </ion-button>
+  </ion-col>
+  <ion-col>
+    <ion-button fill="solid" size="large" class="sqare_button">
+        <div class="vertical">
+          <ion-icon slot="start"name="people-circle-outline"></ion-icon>
+          <span class="">Guest</span>
         </div>
     </ion-button>
   </ion-col>

@@ -48,7 +48,15 @@ export class HomePage {
   {
     this.navCtrl.navigateRoot('/teacher-page');
   }
-
+  async loginWithCard()
+  {
+    let navigationExtras: NavigationExtras = {
+			state	: {
+				deviceid	: this.deviceid
+      }
+    };
+    this.navCtrl.navigateRoot('/personal-information',navigationExtras);
+  }
   async studentpage()
   {
     this.navCtrl.navigateRoot('/student-page');

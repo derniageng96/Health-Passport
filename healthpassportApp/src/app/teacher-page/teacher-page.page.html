@@ -2,6 +2,11 @@
   <ion-back-button defaultHref="/home">back</ion-back-button>
 </ion-buttons>  
 <ion-grid>
+  <center>
+  <ion-toolbar>
+    <ion-title size="large">Teacher's Page </ion-title>
+  </ion-toolbar>
+</center>
 <ion-col>
   <ion-button fill="solid" size="large" class="sqare_button" (click)="loginWithCard()" >
       <div class="vertical">
@@ -11,7 +16,7 @@
   </ion-button>
 </ion-col>
 <ion-col>
-  <ion-button fill="solid" size="large" class="sqare_button" >
+  <ion-button fill="solid" size="large" class="sqare_button" (click)="studentneeds()">
       <div class="vertical">
         <ion-icon slot="start" name="search-outline"></ion-icon>
         <span class="fontStyle">Search Dispenser</span>
